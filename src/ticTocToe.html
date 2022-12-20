@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="css/fontawesome-4.7/css/font-awesome.min.css">
+    <script src="work.js"></script>
+    <title>Document</title>
+</head>
+
+<body class=" flex flex-col  border-2 bg-zinc-400 border-slate-500 rounded-lg">
+    <div class="bg-rose-600 p-3 border-b-2 border-slate-500 text-center font-serif font-bold text-xl rounded-t-lg">
+        Tic Toc Toe
+    </div>
+
+    <div class="flex flex-row justify-evenly items-center h-full w-full ">
+        <div class="flex flex-col justify-evenly h-full ">
+            <div class=" border-collapse h-1/2 flex flex-col justify-end items-end font-bold ">
+                <div class="bg-slate-50 border-0 flex flex-row justify-center rounded-t-lg ">
+                    <div class="h-20 text-center font-extrabold flex flex-col justify-center w-20 hover:bg-blue-200  "
+                        id="1" onclick="move(1) "></div>
+                    <div class="border-x-2 font-extrabold border-slate-500 text-center h-20 w-20 flex flex-col justify-center hover:bg-blue-200 "
+                        id="2" onclick="move(2)"></div>
+                    <div class="h-20 w-20 font-extrabold  hover:bg-blue-200 text-center flex flex-col justify-center "
+                        onclick="move(3)" id="3"></div>
+                </div>
+                <div class="bg-slate-50 flex flex-row justify-center">
+                    <div class="border-y-2 font-extrabold border-slate-500  text-center h-20 w-20  hover:bg-blue-200 flex flex-col justify-center "
+                        onclick="move(4)" id="4"></div>
+                    <div class="border-2 font-extrabold border-collapse text-center border-slate-500 h-20 w-20 flex flex-col justify-center hover:bg-blue-200 "
+                        onclick="move(5)" id="5"></div>
+                    <div class="border-y-2 font-extrabold border-slate-500 text-center h-20 w-20 flex flex-col justify-center  hover:bg-blue-200 "
+                        onclick="move(6)" id="6"></div>
+                </div>
+                <div class="bg-slate-50 border-0 rounded-b-lg flex flex-row justify-center">
+                    <div class="h-20 w-20 font-extrabold  hover:bg-blue-200 text-center flex flex-col justify-center"
+                        onclick="move(7)" id="7"></div>
+                    <div class="border-x-2 font-extrabold border-slate-500 text-center h-20 w-20 flex flex-col justify-center hover:bg-blue-200 "
+                        onclick="move(8)" id="8"></div>
+                    <div class="h-20 w-20 font-extrabold  hover:bg-blue-200 text-center flex flex-col justify-center"
+                        onclick="move(9)" id="9"></div>
+                </div>
+            </div>
+            <div class=" flex flex-row justify-evenly">
+                <button class="border-2 py-1  px-2 bg-indigo-500 rounded-lg hover:text-white border-slate-500" type="reset" onclick="reset()" >Reset</button>
+                <button class="border-2 py-1 px-2 bg-indigo-500 rounded-lg hover:text-white border-slate-500" type="gameEnd" onclick="gameOver()">Game End</button>
+            </div>
+        </div>
+        <div class="border-2 bg-white rounded-lg flex flex-col border-slate-500 h-2/3 w-60">
+            <div class="flex-none w-full font-bold text-center rounded-t-lg border-b-2 bg-indigo-500 border-slate-500">
+                Score Card
+            </div>
+            <div class="flex flex-row justify-evenly border-b-2 border-slate-500">
+                <div class="font-bold ">S.no</div>
+                <div class="font-bold border-x-2 border-slate-500 px-3">Player1</div>
+                <div class="font-bold">Player2</div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="1sno"></div>
+                <div class="flex-grow text-center " id="1wPlayer1"></div>
+                <div class="flex-grow text-center" id="1wPlayer2"></div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="2sno"></div>
+                <div class="flex-grow text-center " id="2wPlayer1"></div>
+                <div class="flex-grow text-center" id="2wPlayer2"></div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="3sno"></div>
+                <div class="flex-grow text-center " id="3wPlayer1"></div>
+                <div class="flex-grow text-center" id="3wPlayer2"></div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="4sno"></div>
+                <div class="flex-grow text-center " id="4wPlayer1"></div>
+                <div class="flex-grow text-center" id="4wPlayer2"></div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="5sno"></div>
+                <div class="flex-grow text-center " id="5wPlayer1"></div>
+                <div class="flex-grow text-center" id="5wPlayer2"></div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="6sno"></div>
+                <div class="flex-grow text-center " id="6wPlayer1"></div>
+                <div class="flex-grow text-center" id="6wPlayer2"></div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="7sno"></div>
+                <div class="flex-grow text-center " id="7wPlayer1"></div>
+                <div class="flex-grow text-center" id="7wPlayer2"></div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="8sno"></div>
+                <div class="flex-grow text-center " id="8wPlayer1"></div>
+                <div class="flex-grow text-center" id="8wPlayer2"></div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="9sno"></div>
+                <div class="flex-grow text-center " id="9wPlayer1"></div>
+                <div class="flex-grow text-center" id="9wPlayer2"></div>
+            </div>
+            <div class="grow font-bold flex flex-row" id="addWinner">
+                <div class="flex-grow text-center" id="10sno"></div>
+                <div class="flex-grow text-center " id="10wPlayer1"></div>
+                <div class="flex-grow text-center" id="10wPlayer2"></div>
+            </div>
+            <div class="flex flex-row border-t-2 border-slate-500 ">
+                <div class="flex-grow">
+                    Total Wins:
+                </div>
+                <div class="flex-grow text-center" id="noWin1"></div>
+                <div class="flex-grow text-center" id="noWin2"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

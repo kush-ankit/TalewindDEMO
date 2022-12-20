@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="css/fontawesome-4.7/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="Login.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="flex flex-row justify-center items-center">
+    <div
+        class="flex font-serif  bg-slate-200 flex-col outline-4 outline-indigo-500 outline-double items-center w-1/3 h-1/3 rounded-lg  ">
+        <div id="a"
+            class="p-2 flex flex-row justify-center border-b-2 border-indigo-500 bg-rose-300 w-full h-12 text-2xl underline font-bold">
+            LogIn
+        </div>
+        <div class="mt-6 h-full w-full">
+            <form>
+                <div class="p-2 w-full hover:font-bold flex flex-row justify-evenly ">
+                    <label for="username"> <p>Username &emsp;&emsp;&emsp;   :</p></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="hover:font-bold p-2 h-full flex flex-row justify-evenly">
+                    <label for="password">Password&emsp; &emsp; &emsp;  :</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="hover:font-bold p-2 w-full flex flex-row justify-evenly">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" name="password" id="cPassword" required>
+                </div>
+                <div class="hover:text-white flex w-full mt-3  flex-row justify-end">
+                    <button class="border-2 px-3 bg-indigo-400 rounded-lg" type="button" value="Submit" id="submitButton">Button</button>
+                    <button class="border-2 px-3 bg-indigo-400 rounded-lg" type="button" value="Submit" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

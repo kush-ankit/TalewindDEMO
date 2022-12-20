@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Quiz</title>
+</head>
+
+<body class=" flex flex-col font-mono bg-zinc-300 ">
+    <div class="p-3">
+        <header
+            class="bg-gradient-to-r from-cyan-500 to-indigo-500 drop-shadow-lg text-center rounded-lg w-full text-3xl font-serif font-bold p-3">
+            <div>
+                Test Quiz
+            </div>
+        </header>
+        <div id="endquiz">
+            <section id="startbtn" class="m-3 ">
+                <div class="flex justify-center items-center h-96 ">
+                    <button
+                        class="bg-blue-500 rounded-lg hover:text-white hover:opacity-70 outline outline-2 outline-offset-2  px-3 py-2 outline-slate-900 ">Start
+                        Quiz</button>
+                </div>
+            </section>
+            <section class=" hidden" id="quizpmt">
+
+                <div
+                    class="border-y-2 bg-gradient-to-r from-purple-400 to-pink-400 h-10 mt-5 items-center flex flex-row justify-between px-2 border-slate-500 ">
+                    <div>Total Questions : 20</div>
+                    <div id="aQe"> Attempted Questions : </div>
+                    <div>Time Left :<div class="timer">
+                            <time id="countdown">5:00</time>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row justify-end ">
+
+                    <div id="onclickques" class="flex-grow hidden m-3 h-full bg-slate-200 rounded-lg p-5">
+                        <div class="flex flex-col justify-between">
+                            <div class=" p-2 rounded-lg " id="ques">
+
+                            </div>
+                            <div class=" m-3 mt-5 ">
+                                <div class="m-2">a.
+                                    <button
+                                        class="border-2  hover:bg-opacity-50 bg-zinc-400 border-slate-500 rounded-lg w-48"
+                                        id="option1"></button>
+                                </div>
+                                <div class="m-2">b.
+                                    <button
+                                        class="border-2 hover:bg-opacity-50 bg-zinc-400 border-slate-500 rounded-lg w-48"
+                                        id="option2"></button>
+                                </div>
+                                <div class="m-2">c.
+                                    <button
+                                        class="border-2 hover:bg-opacity-50 bg-zinc-400 border-slate-500 rounded-lg w-48"
+                                        id="option3"></button>
+                                </div>
+                                <div class="m-2">d.
+                                    <button
+                                        class="border-2 hover:bg-opacity-50 bg-zinc-400 border-slate-500 rounded-lg w-48 "
+                                        id="option4"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-row justify-end">
+                                <button id="prevques"
+                                    class="border-2 border-slate-400 px-5 rounded-lg m-3 hover:bg-opacity-50 bg-blue-400 ">Previous</button>
+                                <button id="nextques"
+                                    class="border-2 border-slate-400 px-5 rounded-lg m-3 hover:bg-opacity-50 bg-blue-400">Next</button>
+                                <button id="endquizbtn"
+                                    class="border-2 border-slate-400 px-5 rounded-lg m-3 hover:bg-red-800 bg-rose-600">End
+                                    Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" w-1/5 border-2  bg-slate-200  border-slate-500 drop-shadow-lg m-5 rounded-lg ">
+                        <header class=" bg-yellow-700 text-center text-lg font-bold border-slate-500 rounded-t-lg m-0">
+                            <div class="">
+                                Track Record
+                            </div>
+                        </header>
+                        <div class=" p-2 h-96  overflow-auto  ">
+                            <div id="1"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg cursor-pointer bg-slate-500 quesclick ">
+                                Question 1
+                            </div>
+                            <div id="2"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 2
+                            </div>
+                            <div id="3"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 3
+                            </div>
+                            <div id="4"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg cursor-pointer bg-slate-500 quesclick">
+                                Question 4
+                            </div>
+                            <div id="5"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 5
+                            </div>
+                            <div id="6"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 6
+                            </div>
+                            <div id="7"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 7
+                            </div>
+                            <div id="8"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 8
+                            </div>
+                            <div id="9"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 9
+                            </div>
+                            <div id="10"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 10
+                            </div>
+                            <div id="11"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 11
+                            </div>
+                            <div id="12"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 12
+                            </div>
+                            <div id="13"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 13
+                            </div>
+                            <div id="14"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 14
+                            </div>
+                            <div id="15"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 15
+                            </div>
+                            <div id="16"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 16
+                            </div>
+                            <div id="17"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 17
+                            </div>
+                            <div id="18"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 18
+                            </div>
+                            <div id="19"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 19
+                            </div>
+                            <div id="20"
+                                class="m-3 pl-2 outline outline-2 outline-offset-2 rounded-lg  cursor-pointer bg-slate-500 quesclick">
+                                Question 20
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="result" class="hidden">
+            <div class="h-96 flex flex-col justify-center items-center w-full">
+                <div class="flex flex-col justify-center items-center font-bold font-serif underline h-16 w-2/5 text-2xl text-center bg-zinc-300 border-2 border-slate-400 rounded-lg ">Result</div>
+                <div class="flex flex-row rounded-lg h-80 w-2/5 border-2 border-slate-400">
+                    <div
+                        class="border-r-2 font-bold w-1/2 p-5 flex flex-col justify-evenly border-slate-400 bg-zinc-300 rounded-l-lg">
+                        <div>Total Questions</div>
+                        <div>Attempted Questions</div>
+                        <div>Left Questions</div>
+                        <div class=" text-lg">Score</div>
+                    </div>
+                    <div class="w-1/2 p-5 font-bold flex flex-col justify-evenly bg-zinc-300 rounded-r-lg">
+                        <div>:&emsp;&emsp;20</div>
+                        <div id="atques">:&emsp;&emsp;</div>
+                        <div id="ltques">:&emsp;&emsp;</div>
+                        <div id="score">:&emsp;&emsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./quiz.js"></script>
+
+</html>

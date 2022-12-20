@@ -1,0 +1,151 @@
+{
+    "quiz": [
+        {
+            "quiz1": "What is 3+3 ?",
+            "opt1": "3",
+            "opt2": "4",
+            "opt3": "5",
+            "opt4": "6",
+            "crtopt": 4,
+            "mark": 7
+        },
+        {
+            "quiz1": "What is 4+4 ?",
+            "opt1": "1",
+            "opt2": "8",
+            "opt3": "9",
+            "opt4": "6",
+            "crtopt": 2,
+            "mark": 10
+        },
+        {
+            "quiz1": "What is 5+7 ?",
+            "opt1": "12",
+            "opt2": "14",
+            "opt3": "15",
+            "opt4": "10",
+            "crtopt": 1,
+            "mark": 5
+        },
+        {
+            "quiz1": "What is 5+3 ?",
+            "opt1": "12",
+            "opt2": "8",
+            "opt3": "15",
+            "opt4": "4"
+        },
+        {
+            "quiz1": "What is 4+7 ?",
+            "opt1": "12",
+            "opt2": "1",
+            "opt3": "15",
+            "opt4": "11"
+        },
+        {
+            "quiz1": "What is your name ?",
+            "opt1": "Ankit",
+            "opt2": "Ravi",
+            
+            "opt3": "Sumit",
+            "opt4": "Vinay"
+        },
+        {
+            "quiz1": "Grand Central Terminal, Park Avenue, New York is the world's ",
+            "opt1": "largest railway station",
+            "opt2": "highest railway station",
+            "opt3": "longest railway station",
+            "opt4": "None of the above"
+        },
+        {
+            "quiz1": "Entomology is the science that studies",
+            "opt1": "Behavior of human beings",
+            "opt2": "Insects",
+            "opt3": "The origin and history of technical and scientific terms",
+            "opt4": "The formation of rocks"
+        },
+        {
+            "quiz1": "Eritrea, which became the 182nd member of the UN in 1993, is in the continent of",
+            "opt1": "Asia",
+            "opt2": "Africa",
+            "opt3": "Europe",
+            "opt4": "Australia"
+        },
+        {
+            "quiz1": "Hitler party which came into power in 1933 is known as",
+            "opt1": "Labour Party",
+            "opt2": "Nazi Party",
+            "opt3": "Ku-Klux-Klan",
+            "opt4": "Democratic Party"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        },
+        {
+            "quiz1": "What is 1+7 ?",
+            "opt1": "8",
+            "opt2": "14",
+            "opt3": "7",
+            "opt4": "10"
+        }
+    ]
+}
